@@ -1,0 +1,44 @@
+:root
+{
+    --x-transition-duration-big-enter: 0.3s;
+    --x-transition-duration-big-leave: 0.25s;
+    --x-transition-duration-small-enter: 0.25s;
+    --x-transition-duration-small-leave: 0.2s;
+
+    --x-timing-function-ease-in: cubic-bezier(0.0, 0.0, 0.2, 1);
+    --x-timing-function-ease-out: cubic-bezier(0.4, 0.0, 1, 1);
+}
+
+
+
+
+/***** Animation classes *****/
+
+/** Fade transition **/
+.fade-big-enter-active {
+    transition-property: opacity;
+    transition-duration: var(--x-transition-duration-big-enter);
+    transition-timing-function: var(--x-timing-function-ease-in);
+}
+.fade-big-leave-active {
+    transition-property: opacity;
+    transition-duration: var(--x-transition-duration-big-leave);
+    transition-timing-function: var(--x-timing-function-ease-out);
+}
+.fade-big-enter, .fade-big-leave-to {
+    opacity: 0;
+}
+
+.fade-small-enter-active {
+    transition-property: opacity;
+    transition-duration: var(--x-transition-duration-small-enter);
+    transition-timing-function: var(--x-timing-function-ease-in);
+}
+.fade-small-leave-active {
+    transition-property: opacity;
+    transition-duration: var(--x-transition-duration-small-leave);
+    transition-timing-function: var(--x-timing-function-ease-out);
+}
+.fade-small-enter, .fade-small-leave-to {
+    opacity: 0;
+}

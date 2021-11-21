@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+@layer utilities {
+    .glass {
+        @apply bg-gray-100 dark:bg-gray-900 bg-opacity-50 backdrop-filter backdrop-blur-md;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    }
+}
