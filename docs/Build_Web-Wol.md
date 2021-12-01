@@ -85,4 +85,4 @@ Open your browser and type the following URL: `http://localhost:<your-port>`.
 
 Congratulations 😀! You have build Web-Wol. 
 
-You can now read the [deploy Web-Wol](docs/Deploy_Web-Wol.md) guide.
+You can now read the [deploy Web-Wol](Deploy_Web-Wol.md) guide.

@@ -11,4 +11,4 @@ You should now see a new folder called `web-wol`.
 
 Congratulations 😀! You have downloaded Web-Wol. 
 
-You can now read the [build Web-Wol](docs/Build_Web-Wol.md) guide.
+You can now read the [build Web-Wol](Build_Web-Wol.md) guide.

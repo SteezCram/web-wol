@@ -99,4 +99,4 @@ service nginx restart
 
 Congratulations 😀! You have deploy Web-Wol. 
 
-You can now read the [use HTTPS](docs/Use_HTTPS.md) guide.
+You can now read the [use HTTPS](Use_HTTPS.md) guide.
