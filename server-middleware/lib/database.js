@@ -18,7 +18,7 @@ const path = require('path');
 */
 module.exports.all = async function(query, arguments)
 {
-    const db = new Database(path.resolve('./web-wol.db'), { verbose: console.log });
+    const db = new Database(path.resolve('./web-wol.db'), { verbose: process.env.NODE_ENV === 'production' ? null : console.log });
 
     return db.prepare(query).all(arguments);
 }
@@ -33,7 +33,7 @@ module.exports.all = async function(query, arguments)
 */
 module.exports.get = async function(query, arguments)
 {
-    const db = new Database(path.resolve('./web-wol.db'), { verbose: console.log });
+    const db = new Database(path.resolve('./web-wol.db'), { verbose: process.env.NODE_ENV === 'production' ? null : console.log });
 
     return db.prepare(query).get(arguments);
 }
@@ -48,7 +48,7 @@ module.exports.get = async function(query, arguments)
 */
 module.exports.run = async function(query, arguments)
 {
-    const db = new Database(path.resolve('./web-wol.db'), { verbose: console.log });
+    const db = new Database(path.resolve('./web-wol.db'), { verbose: process.env.NODE_ENV === 'production' ? null : console.log });
 
     return db.prepare(query).run(arguments);
 }
